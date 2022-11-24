@@ -1,7 +1,7 @@
-import 'package:counter_7/form.dart';
-import 'package:counter_7/showbudgets.dart';
+import 'form.dart';
+import 'showbudgets.dart';
 import 'package:flutter/material.dart';
-import 'package:counter_7/main.dart';
+import 'main.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({Key? key}) : super(key: key);
