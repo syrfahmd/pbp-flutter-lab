@@ -28,7 +28,7 @@ class WatchListDetail extends StatelessWidget {
                 Text("Release Date : ",
                     style:
                     TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
-                Text(data.title,
+                Text(data.release_date,
                     style:
                     TextStyle(fontWeight: FontWeight.normal, fontSize: 16)),
               ],

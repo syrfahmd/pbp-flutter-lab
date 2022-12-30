@@ -3,13 +3,6 @@ import 'package:flutter/http.dart' as http;
 import 'WatchListDetail.dart';
 import 'watchlistModel.dart';
 import 'drawer.dart';
-// import 'package:counter_7/page/addBudget.dart';
-// import 'package:counter_7/model/dataBudget.dart';
-// import 'package:counter_7/page/drawer.dart';
-// import 'package:counter_7/page/showBudget.dart';
-// import 'package:counter_7/page/watchlistDetail.dart';
-// import 'package:counter_7/api/fetchData.dart';
-// import 'package:counter_7/main.dart';
 import 'package:flutter/material.dart';
 
 class WatchListPage extends StatefulWidget {
@@ -23,7 +16,7 @@ class _WatchListPageState extends State<WatchListPage> {
   List<bool> statusMovie = [];
   Future<List<WatchList>> fetchWatchlist() async {
     var url = Uri.parse(
-        'http://katalog-lab02-2106653060.herokuapp.com/mywatchlist/json/');
+        'https://pbp-syarief.herokuapp.com/mywatchlist/json/');
     var response = await http.get(
       url,
       headers: {
