@@ -1,5 +1,6 @@
 import 'form.dart';
 import 'showbudgets.dart';
+import 'watchlistPage.dart';
 import 'package:flutter/material.dart';
 import 'main.dart';
 
@@ -39,6 +40,16 @@ class MyDrawer extends StatelessWidget {
               Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(builder: (context) => const MyBudgetPage()),
+              );
+            },
+          ),
+          ListTile(
+            title: const Text('Watchlist Page'),
+            onTap: () {
+              // Route menu ke halaman utama
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => const WatchListPage()),
               );
             },
           ),
